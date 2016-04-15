@@ -93,7 +93,7 @@ public class MyLinkedList<E> implements List<E> {
 			this.head = node;
 		} else {
 			Node prevNode = getNode(index - 1);
-			Node newNode = new Node(element, prevNode.next);
+			Node newNode = Node(element, prevNode.next);
 			prevNode.next = newNode;
 		}
 		size++;
